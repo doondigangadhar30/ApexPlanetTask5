@@ -1,0 +1,296 @@
+<!-- 
+  ApexPlanet Final Task:
+  Project: Duck Hunt Web Application
+  Uploaded: Friday, 29 November 2024
+  Author: R Doondi Gangadhar
+
+    Adjust Site Permissions:
+    Go to Settings > Cookies and site permissions > Media autoplay.
+    Set the Media autoplay option to Allow to enable autoplay on all sites, or add a specific site to the allowlist.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Hunt Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styleForm.css">
+
+
+    <style>
+        body {
+            background-color: black;
+            color: beige;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth; 
+            font-family: "Press Start 2P";
+            overflow-x: hidden; 
+        }
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin: 0;
+        }
+        .menu li {
+            margin: 0 10px;
+        }
+        .menu-btn {
+            color: orange;
+            text-decoration: none;
+        }
+        .menu-btn:hover {
+            color: beige;
+        }
+        section {
+            padding: 60px 20px;
+            min-height: 100vh; 
+        }
+        #logo {
+            display: block;
+            margin: 0 auto;
+            height: 450px;
+            width: 850px;
+        }
+        table {
+            width: 80%;
+            text-align: center;
+            margin: 20px auto;
+            color: orange;
+        }
+        a {
+            text-decoration: none;
+            color: orange;
+        }
+        #dh-footer {
+            color: whitesmoke;
+            text-align: center;
+            font-size: 15px;
+            padding-top: 150px;
+        }
+        #dh-score {
+            color: green;
+            text-align: center;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+      
+        .services-grid {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .service {
+            width: 30%;
+        }
+
+        .service img {
+            width: 350px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .service {
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+
+        .service:hover {
+            background-color:transparent;
+        }
+
+        .service-icon {
+            width: 550px;
+            height: 280px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .service:hover .service-icon {
+            transform: scale(1.2);
+        }
+       
+        h2, h3, p {
+            margin: 10px 0;
+        }
+        .contact-section {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-section h2 {
+            color: orange;
+            margin-bottom: 15px;
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .contact-icon {
+            font-size: 1.8em;
+            color: orange;
+            text-decoration: none;
+        }
+        .contact-icon:hover {
+            color: beige;
+        }
+
+        #tenor {
+            display: block;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul class="menu">
+        <li><a href="#home" class="menu-btn">Home</a></li>
+        <li><a href="#about" class="menu-btn">About</a></li>
+        <li><a href="#sample" class="menu-btn">Demo</a></li>
+        <li><a href="#contact" class="menu-btn">Contact</a></li>
+    </ul>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <img src="duckHuntLogo.jpg" id="logo" alt="Duck Hunt Logo">
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td><h2><a href="gameA.html" title="Level 1">GAME A</a></h2></td>
+                    <td><h2>EASY LEVEL</h2></td>
+                </tr>
+                <tr>
+                    <td><h2><a href="gameB.html" title="Level 2">GAME B</a></h2></td>
+                    <td><h2>MEDIUM LEVEL</h2></td>
+                </tr>
+                <tr>
+                    <td><h2><a href="gameC.html" title="Level 2" >GAME C</a></h2></td>
+                    <td><h2>CLAY SHOOTING</h2></td>
+                </tr>
+            </table>
+            <div class="go-para">
+                <p>User <span id="displayUsername"></span> High score is: <span id="displayScore"></span></p> 
+            </div>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <h2>About Game</h2>
+        <div class="col" style="display: flex; align-items: center; gap: 20px; padding: 20px;">
+            <div style="flex: 1;">        
+            <img src="tenor.gif" id="tenor" style="width: 650px; height: 500px; border-radius: 8px;"> 
+            </div>
+            <div style="flex: 1; color: rgb(32, 255, 248); font-size: larger; line-height: 1.6;">
+                <p style="text-align: justify; padding: 10px;">
+                    <a href="https://en.wikipedia.org/wiki/Duck_Hunt"  title="Visit Wikipedia about Duck Hunt Game"  style="color: orangered; text-decoration: none;">
+                        <b>Duck Hunt,</b>
+                    </a>released by Nintendo in 1984 for the 
+                    <a href="https://en.wikipedia.org/wiki/Nintendo_Entertainment_System"  title="Visit Wikipedia about NES"  style="color: orange; text-decoration: none;">
+                        <b> Nintendo Entertainment System (NES),</b>
+                    </a>is a classic light gun shooter where players aim at flying ducks or clay targets.<br> 
+                    Using the NES Zapper, the game offers multiple modes and increasing difficulty.
+                     Its innovative gameplay and iconic sound effects made it a beloved classic.<br> Duck Hunt remains a nostalgic favorite in gaming history.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="sample" id="sample">
+        <h2>Sample Game</h2>
+        <br>
+        <div class="services-grid">
+            <div class="service">
+                <img src="gifA.gif" alt="Game A mode" class="service-icon">
+                <h3>Game A mode</h3>
+                <div class="page-btn">
+                    <button onclick="window.location.href='gameA.html'" class="popup-btn">Let’s Play</button>
+                </div>            </div>
+            <div class="service">
+                <img src="gifB.gif" alt="Game B mode" class="service-icon">
+                <h3>Game B mode</h3>
+                <div class="page-btn">
+                    <button onclick="window.location.href='gameB.html'" class="popup-btn">Let’s Play</button>
+                </div>            </div>
+            <div class="service">
+                <img src="gifC.gif" alt="Clay Shoot mode" class="service-icon">
+                <h3>Clay Shoot mode</h3>
+                <div class="page-btn">
+                    <button onclick="window.location.href='gameC.html'" class="popup-btn">Let’s Play</button>
+                </div
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mrbgoezp" method="POST" style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #333; border-radius: 10px;">
+            <div class="holder" style="margin-bottom: 15px;">
+                <input type="text" name="name" required placeholder="Enter your name here" style="width: 95%; padding: 10px; border: 15px; border-radius: 15px;">
+            </div>
+            <div class="holder" style="margin-bottom: 15px;">
+                <input type="email" name="email" required placeholder="Email id" style="width: 95%; padding: 10px; border: 15px; border-radius: 15px;">
+            </div>
+            <div class="holder" style="margin-bottom: 15px;">
+                <textarea name="message" required placeholder="Your Message" rows="5" style="width: 95%; padding: 10px; border: 15px; border-radius: 15px;"></textarea>
+            </div>
+            <button type="submit" class="btn" style="background-color: orange; color: white; padding: 10px 20px; font-size: 1.2em; border: none; border-radius: 5px; cursor: pointer;">SUBMIT</button>
+        </form>
+        
+        
+        <div class="contact-links" style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
+            <div class="contact-links">
+                <a href="https://github.com/doondigangadhar30" class="contact-icon" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/doondi" class="contact-icon" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:doondigangadhar30@gmail.com" class="contact-icon" title="Gmail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://leetcode.com/yourusername" class="contact-icon" target="_blank" title="LeetCode">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <h2 id="dh-footer">&copy; 2024 R Doondi Gangadhar. All rights reserved.</h2>
+        </footer>
+    
+    </section>
+
+    
+
+    <script>
+        // username and score from local storage
+        document.getElementById("displayUsername").textContent = localStorage.getItem("username") || "Guest";
+        document.getElementById("displayScore").textContent = localStorage.getItem("finalScore") || 0;
+    </script>
+
+    <audio autoplay loop style="display: none;">
+        <source src="index.mp3" type="audio/ogg">
+    </audio>
+</body>
+</html>
+
+
+
+

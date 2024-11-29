@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Duck Hunt</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="scoreClass">Score : <span id="currentScore">0</span></div>
+        <div class="scoreTimer">Time Counter : <span id="currentTimer">60</span> s</div>
+        <div class="bottom-right">username</div>
+
+        <div class="mainPanal" onmousemove="moveAimImage(event)">
+            <div class="duckImageDiv">
+                <img id="clay1" src="Clay.gif" onclick="hideClay(this.id)">
+                <img id="clay2" src="Clay.gif" onclick="hideClay(this.id)">
+            </div>
+
+            <audio id="fireSound">
+                <source src="gun.mp3" type="audio/mp3">
+            </audio>
+
+            <audio autoplay style="display: none;">
+                <source src="dog.mp3" type="audio/ogg">
+            </audio>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
