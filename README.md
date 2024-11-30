@@ -19,7 +19,7 @@ Here's a preview of the game in action:
 - **Demo Page** ![Screenshot_30-11-2024_192413_doondigangadhar30 github io](https://github.com/user-attachments/assets/cc4305ee-47d6-472e-92d8-c0c7449d0910)
 - **Contact Page** ![Screenshot_30-11-2024_192436_doondigangadhar30 github io](https://github.com/user-attachments/assets/41f42e1a-0cdb-46af-997e-eef6b45a9ca0)
 
-- Next Up: Due to time constraints with semester exams, I’ve focused on the web-based version for now. I plan to make the game fully hashtag#responsive in the future, so it’s accessible on mobile and tablet devices as well!
+- Next Up: Due to time constraints with semester exams, I’ve focused on the web-based version for now. I plan to make the game fully responsive in the future, so it’s accessible on mobile and tablet devices as well!
   
 ## Links 📌
 
